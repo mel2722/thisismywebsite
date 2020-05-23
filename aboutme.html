@@ -1,0 +1,417 @@
+<html>
+<head>
+	<link rel="icon" type="images" href="logo.png">
+	<title>About me</title>
+
+	<!-- Internal External -->
+	<style>
+		
+		body{
+			background:url('q.jpg') no-repeat; 
+			background-size: cover;
+		}
+
+
+		div.Content1{
+			width: 99.5%;
+			height: 80%;
+			position: relative;
+			background-color: rgba(158, 158, 158,0.3);
+			margin-bottom: 5px;
+			border-style: solid;
+			border-width: 2px;
+			border-color: #349350;
+			border-radius: 10px;
+			overflow: auto;
+		}
+	
+		
+
+
+		div.Mia{
+			width: 25%;
+			height: auto;
+			color: 	rgba(201, 254, 192,0.9);
+			background-image: url(milky.jpg);
+			background-size: cover;
+			position: relative;
+			float: left;
+			margin-top: 11px;
+			margin-left: 10px;
+			border-radius: 20px;
+			
+		}
+
+
+		div.BasicInformationAboutMe{
+			width: 30%;
+			height: auto;
+			background-color: rgba(235, 241, 244,0.8);
+			border: solid;
+			position: relative;
+			float: right;
+			margin-bottom: 10px;
+			margin-top: 8px;
+			margin-right: 40px; 
+			border-radius: 20px;
+		}
+
+		div.WorkExperience{
+			width: 30%;
+			height: auto;
+			background-color: rgba(235, 241, 244,0.8);
+			border: solid;
+			position: relative;
+			float: right;
+			margin-bottom: 10px;
+			margin-top: 8px;
+			margin-right: 40px; 
+			border-radius: 20px;
+		}
+
+		div.Education{
+			width: 30%;
+			height: auto;
+			background-color: rgba(235, 241, 244,0.8);
+			border: solid;
+			position: relative;
+			float: right;
+			margin-bottom: 10px;
+			margin-top: 8px;
+			margin-right: 40px; 
+			border-radius: 20px;
+		}
+
+		div.skills{
+			width: 30%;
+			height: auto;
+			background-color: rgba(235, 241, 244,0.8);
+			border: solid;
+			position: relative;
+			float: right;
+			margin-bottom: 10px;
+			margin-top: 8px;
+			margin-right: 40px; 
+			border-radius: 20px;
+		}
+
+		/*PopUps For About Us Formatting*/
+		.overlay1 {
+ 	 	position: fixed;
+ 	 	top: 0;
+ 	 	bottom: 0;
+ 	 	left: 0;
+ 	 	right: 0;
+ 	 	background: rgba(0, 0, 0, 0.8);
+ 	 	transition: opacity 500ms;
+ 	 	visibility: hidden;
+ 	 	opacity: 0;
+		}	
+
+		.overlay1:target {
+ 	 		visibility: visible;
+ 	 		opacity: 1;
+		}
+
+		.popup1 {
+  			margin-top: 100px;
+  			padding: 10px;
+  			background: rgb(77, 198, 221);
+  			border-radius: 5px;
+  			width: 30%;
+  			position: relative;
+  			transition: all 5s ease-in-out;
+		}
+
+		.popup1 h2 {
+  			margin-top: 0;
+  			color: black;
+  			font-family: Tahoma, Arial, sans-serif;
+		}
+
+		.popup1 .close1 {
+  			position: absolute;
+ 			top: 20px;
+ 			right: 30px;
+  			transition: all 200ms;
+  			font-size: 30px;
+  			font-weight: bold;
+ 			text-decoration: none;
+ 			color: #333;
+		}
+
+		.popup1 .close1:hover {
+ 		 	color: red;
+ 		 	transition: 300ms;
+		}
+
+		.popup1 .content11 {
+ 		 	max-height: 60%;
+ 		 	width: 100%;
+		}
+		
+/*Header Formats*/
+			#header{
+			
+				float:right;
+		 		margin-right:1%;
+				font-size:1.3vw;
+				color: yellow;
+		 		color: white;
+			}
+
+			#head1{
+				padding:0;
+				list-style: none;
+			}
+		
+			#head2{
+				float:right;
+				width: 20vw;
+			}
+
+			#head3{
+				color:black;
+				width:12vw;
+				text-decoration:none;
+				display:block;
+				text-align:center;
+				padding:15px;
+				font-family: Times New Roman;
+				font-weight:bold;
+				font-size:1.7vw;
+				margin: 17 auto;
+				transition:0.3s all;
+				border-style: solid;
+
+			}
+			
+			#head3:hover{
+				transition: .3s all;
+				background-color: rgba(255, 238, 88,0.8);
+				border:solid;
+				border-radius:15px;
+				border-width: 2px;
+			}
+
+		/* Footer Formatting */
+		#Footer{
+			width: 99.5%;
+			height: 17.4%;
+			background-color: rgba(0, 0, 0,0.6);
+			position: relative;
+			float: right;
+			border-color: #349350;
+			border-style: solid;
+			border-radius: 10px;
+			border-width: 2px;
+			margin-top: 5px;
+			color: white;
+		}
+
+		#Footer1{
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			position: relative;
+			float: left;
+		}
+
+		#Footer2{
+			float: left;
+		}
+
+		#Footer3{
+			text-decoration: none;
+			margin-left: 20px;
+			margin-right: 15px;
+			color: white;
+		}
+
+		#Footer3:hover{
+			background-color: darkgrey;
+			transition: .7s all;
+
+		}
+		
+
+	</style>
+</head>
+<body>
+		<!-- Header Part -->
+		<div id="header">	
+			<ul id="head1">
+				<li id="head2"><a id="head3" href= "mycontact.html">Contact me</li></a>	
+				<li id="head2"><a id="head3" href= "aboutme.html">About me</li></a>
+				<li id="head2"><a id="head3" href= "mygallery.html">My Gallery</li></a>
+				<li id="head2"><a id="head3" href= "index.html">Home Page</li></a>		
+			</ul>
+		</div>
+				<!-- Logo -->
+			<div style="width: 20%;height:16%;border-radius: 5px; margin-bottom: 5px;">
+					<center><img src="logo.png" width="90px" height="80px" style="border-radius: 10px;margin-top: 10%"></center>
+				</div>
+
+
+		<!-- Content Part!-->
+		<div class="Content1">
+			<p style="font-size: 2vw;font-weight: bolder;text-align: left;margin-left: 10%;margin-right: 15%;">All about me...</p>
+				<center>
+				
+			
+				<!-- Melissa's About -->
+				<div class="Mia">
+					<div style="width: 30%;height: 25%;margin-top: 50px;border-radius: 50px;">
+						<a href="#popup2"><img src="prof.jpg" style="width: 100%;height: auto;border-radius: 50px"></a>
+					</div>
+					<p style="text-align: center;font-size: 1.5vw;font-weight: bold">Melissa Quinto</p>
+					<hr style="width: 80%;height: .2vw;background-color: teal">
+					<p style="text-align: center;font-size: 1.1vw;font-weight: bold;">Follow Me:</p>
+					<center>
+						<table style="margin-top: 25px;">
+							<tr>
+								<th><a href="https://www.facebook.com/melissaquinto2722 "><img class="Footer1" src="facebook_1.png" style="width: 3vw;height: 5vh;margin-right: 3px;"></a></th>
+								<th><a href="https://myaccount.google.com/"><img class="Footer1" src="googlet.png" style="width: 3vw;height: 5.5vh; margin-right: 5px;"></a></th>
+								<th> <a href="https://www.instagram.com/iammelissaquinto/?hl=en"> <img class="Footer1" src="igt.png" style="width: 3vw;height: 6vh; margin-right: 5px;"></a></th>
+							
+							</tr>
+						</table>
+					</center>
+					<p style="text-align: center;font-size: 1vw;font-weight: bold;margin-top: 25px;";>Yours Truly</p>
+
+				<!-- Skills -->
+				</div>
+
+					<div class="skills">
+					<p style="text-align: center;font-size: 2vw;font-weight: bold;">Skills</p>
+					<hr style="width: 90%;height: .2vw;background-color: teal">
+					<p style="font-size: .9vw; margin:2;margin-left: 5%;margin-right: 5%;text-align: justify;font-family: courier">
+						<br>
+   					 <tr>
+    				<td>Web Development</td>
+   					 <td style="color: red">⍟⍟⍟⍟⍟</td><br><br>
+    				<td>Programming</td>
+   					 <td style="color: red">⍟⍟⍟⍟⍟⍟</td><br><br>
+   					 <td>Graphics Design</td>
+   					 <td style="color: red">⍟⍟⍟⍟⍟⍟</td>
+   					 </tr>
+					</p>
+				</div>
+				
+
+
+
+
+				<!-- info about me -->
+				<div class="BasicInformationAboutMe">
+					<p style="text-align: center;font-size: 2vw;font-weight: bold;">Basic Information About Me</p>
+					<hr style="width: 90%;height: .2vw;background-color: teal">
+					<p style="font-size: .9vw; margin:2;margin-left: 5%;margin-right: 5%;text-align: justify;font-family: courier">
+						<br>
+					 Age: 20 <br>
+   					 Nationality: Filipino <br>
+   					 Date of Birth: January 22, 2000 <br>
+   					 Marital Status: Single <br>
+  					 Language: Filipino, Pangasinan, and English <br>
+    				Home Address: Brgy. Lobong San Jacinto, Pangasinan <br>
+    				Birthplace: Dagupan City, Pangasinan</p>
+				</div>
+
+				<div class="Education">
+					<p style="text-align: center;font-size: 2vw;font-weight: bold;">Education</p>
+					<hr style="width: 90%;height: .2vw;background-color: teal">
+					<p style="font-size: .9vw; margin:2;margin-left: 5%;margin-right: 5%;text-align: justify;font-family: courier">
+
+					<b>College - BS Information Technology</b><br>
+       				 PSU(Main Campus)- Lingayen, Pangasinan<br><br>
+
+					<b>Senior High School - ICT</b><br>
+        			CdD- Dagupan City, Pangasinan<br><br>
+
+     				<b>Junior High School - Grade 7-10 </b><br>
+     				LNHS - San Jacinto, Pangasinan<br><br>
+  
+  					<b>Primary School - Kinder - Grade 6 </b><br>
+        			LES - San Jacinto, Pangasinan<br><br>
+
+						</p>
+				</div>
+
+				<!-- Work Experience-->
+				<div class="WorkExperience">
+					<p style="text-align: center;font-size: 2vw;font-weight: bold;">Work Experience</p>
+					<hr style="width: 90%;height: .2vw;background-color: teal">
+					<p style="font-size: .9vw;text-align: justify; margin: 25px;font-family: courier">	
+					 Student Assistant - January 2020- Present<br>
+      				Pangasinan State University<br><br>
+    
+					Cashier(Part time job) - August 2017-2020<br>
+      				Lucky Hope Commercial<br><br>
+
+      				Saleslady(Part time job) - March-May 2020<br>
+					Cinderella's RTW<br>
+    				</p>
+				</div>
+		</div>
+		<!-- End -->
+
+	<center>
+		
+		<!-- About Melissa -->
+		<div id="popup2" class="overlay1">
+			<div class="popup1">
+				<h2>Melissa Quinto </h2>
+				<a class="close1" href="#">&times;</a>
+				<div class="content11">
+					<div style="background-color: rgba(235, 241, 244,0.7);width: 100%;height: 60%;border-radius: 10px;">
+						<img src="prof.jpg" style="width: 120px;height: 120px; border-radius: 75px;margin-top: 10px;"><br><br>
+						<div style="text-align: left;margin-left: 35px;margin-top: 10px;">
+							Name: <div style="font-size: 1.3vw; font-weight: bold;">Melissa Umpa Quinto</div>
+							Age: <div style="font-size: 1.3vw; font-weight: bold;">20</div>
+							Course: <div style="font-size: 1.3vw; font-weight: bold;">BSIT</div>
+							Birthdate: <div style="font-size: 1.3vw; font-weight: bold;">January 22, 2000</div>
+							Email: <div style="font-size: 1.3vw; font-weight: bold;">melissaquinto2722@gmail.com</div>
+							School: <div style="font-size: 1.3vw; font-weight: bold;">Pangasinan State University</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</center>
+
+<!-- Footer -->
+<center>	
+	<div id="Footer">
+		<!-- Left part footer -->
+		<div  style="position: relative;float: left;font-size: 1.4vw;width: 30%;height: auto;margin-left: 10%;margin-top: 40px;">
+			<ul id="Footer1">
+				<li id="Footer2"><a id="Footer3" href="index.html" style="margin-left: 15px;">Privacy Policy</a> |</li>
+				<li id="Footer2"><a id="Footer3" href="mycontact.html">Feedback</a> |</li>
+				<li id="Footer2"><a id="Footer3" href="mycontact.html">Help Center</a> </li>
+			</ul>
+		</div>
+
+		<!-- Right part Footer -->
+		<div style="position: relative;float: right;font-size: 1.4vw;width: 30%;height: auto;margin-right: 10%;margin-top: 40px;">
+			<ul id="Footer1">
+				<li id="Footer2"><a id="Footer3" href="index.html" style="margin-left: 15px;">User Agreement</a> |</li>
+				<li id="Footer2"><a id="Footer3" href="aboutme.html">Developer</a> |</li>
+				<li id="Footer2"><a id="Footer3" href="mycontact.html">Support</a></li>
+			</ul>
+		</div>
+		<center>
+			<table style="margin-top: 25px;">
+				<tr>
+					<th><a href=""><img class="Footer1" src="facebook_1.png" style="width: 3vw;height: 5vh;margin-right: 3px;"></a></th>
+					<th><a href=""><img class="Footer1" src="googlet.png" style="width: 3vw;height: 5.5vh; margin-right: 5px;"></a></th>
+					<th><a href=""><img class="Footer1" src="igt.png" style="width: 3vw;height: 6vh; margin-right: 5px;"></a></th>
+					<th><a href=""><img class="Footer1" src="tt.png" style="width: 2.2vw;height: 4vh;margin-left: 5px;margin-right: 5px;"></a></th>
+				</tr>
+			</table>
+			<div style="width: 100%;height: auto;background: rgba(0,0,0,0.5);"><p style="font-size: 1.2vw;color: white;"> ©2020 All Rights Reserved.</p></div>
+		</center>
+
+	
+</body>
+</html>
